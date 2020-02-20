@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="532" height="642" viewBox="0 0 532 642">
+  <defs>
+    <style>
+      .cls-12 {
+        fill: #d6a0ff;
+      }
+
+      .cls-13{
+        fill: #546ce3;
+      }
+
+      .cls-14{
+        fill: #65e7fc;
+      }
+
+      .cls-15{
+        fill: #35e39d;
+      }
+    </style>
+  </defs>
+  <g id="Group_26" data-name="Group 26" transform="translate(114 -6083.417)">
+    <ellipse id="Ellipse_34" data-name="Ellipse 34" class="cls-12" cx="147" cy="146.5" rx="147" ry="146.5" transform="translate(-110 6083.417)"/>
+    <ellipse id="Ellipse_36" data-name="Ellipse 36" class="cls-13" cx="117" cy="116.5" rx="117" ry="116.5" transform="translate(184 6260.417)"/>
+    <ellipse id="Ellipse_35" data-name="Ellipse 35" class="cls-14" cx="101" cy="100.5" rx="101" ry="100.5" transform="translate(-114 6443.417)"/>
+    <circle id="Ellipse_37" data-name="Ellipse 37" class="cls-15" cx="91" cy="91" r="91" transform="translate(168 6543.417)"/>
+  </g>
+</svg>

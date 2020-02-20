@@ -1,0 +1,21 @@
+
+$backgroundBlue: #65CFFC;
+$backgroundPurple: #AE43FF;
+$darkBlue:#546CE3;
+$lightGreen:#35E39D;
+
+.entire-page{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    .with-gradient{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        background: radial-gradient(at bottom left, $backgroundBlue, $backgroundPurple);
+        border-radius: 0 0 750px 750px;
+        width: 100%;
+        
+    }
+}
+

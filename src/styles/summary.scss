@@ -1,0 +1,30 @@
+
+
+
+.summary{
+    background-image: url('../images/circle-abstraction-bg.svg');
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -200px;
+    width: 100%;
+    height: 1550px;
+    z-index: -1;
+    &__container{
+        
+        width: 480px;
+        
+        &--title{
+            font-size: 2rem;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+        &--text{
+            text-align: justify;
+            font-size: 1.4rem;
+            font-weight: 300;
+        }
+    }
+    
+}

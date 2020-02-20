@@ -1,0 +1,54 @@
+.footer{
+    margin-top: 200px;
+    margin-left: 200px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    
+    background-image: url('../images/circle-footer-bg.svg');
+    background-repeat: no-repeat;
+
+    &__nav{
+        transform: rotate(-23deg);
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+       
+        &--link{
+            text-decoration: none;
+            font-size: 2rem;
+            color: white;
+
+            &:hover{
+                text-decoration: underline;
+            }
+
+        }
+
+        .link-1{
+            transform: rotate(-5deg);
+        }
+    }
+
+    &__logo-container{
+        margin-left: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .logo{
+            width: 170px;
+           
+        }
+    
+        .copyrights{
+            color:white;
+            display: inline-block;
+            font-size: 1rem;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: -40px;
+        }
+    }
+    
+}
