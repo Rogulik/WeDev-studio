@@ -57,7 +57,9 @@ $breakpoints: (
         position: absolute;
         top:-40px;
         right: -60px;
-
+        @media (prefers-color-scheme: dark) {
+          background-color: white;
+        }
         @include media('<=desktop'){
             width: 600px;
             top: -100px;
