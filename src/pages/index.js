@@ -11,7 +11,6 @@ import '../styles/index.scss'
 
 
 const IndexPage = () =>{
- 
   return (
     <div className='entire-page'>
       <div className='with-gradient'>

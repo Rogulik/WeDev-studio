@@ -1,20 +1,46 @@
+@import '../../node_modules/include-media/dist/include-media';
 
 
 .technologies{
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
+    @include media('<=phone-l'){
+        height: 200px;
+    }
     .colorful-circels{
         position: absolute;
         left:-100px;
+        
+        @include media('<=desktop'){
+            width: 400px;
+        }
+        @include media('<=tablet'){
+            width: 300px;
+        }
+        @include media('<=phone-l'){
+            width: 180px;
+            top: -300px;
+            left: -60px;
+            opacity: .9;
+           
+        }
     }
 
     &__container{
         margin-left: 40px;
+        @include media('<=phone-l'){
+           margin-left: 100px;
+           margin-top: 50px;
+           z-index: 2;
+        }
+        
         &--title{
             font-size: 3rem;
             letter-spacing: 2px;
             font-weight: 300;
+             mix-blend-mode: difference;
         }
     }
 }

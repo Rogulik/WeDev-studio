@@ -1,12 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&display=swap');
-
+@import '../../node_modules/include-media/dist/include-media';
 html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
   }
+
+  :root{
+
+    @include media("<=desktop"){
+      font-size: 70%;
+    }
+    @include media("<=tablet"){
+      font-size: 65.5%;
+    }
+    @include media("<=phone-l"){
+      font-size: 50%;
+    }
+  }
+
   body {
     margin: 0;
-    font-size: 62.5%;
+
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }

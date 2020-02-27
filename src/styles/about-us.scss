@@ -1,15 +1,36 @@
-
+@import '../../node_modules/include-media/dist/include-media';
 
 .about-us{
     position: relative;
     width: 100%;
     height:650px;
-   
+
+    @include media('<=phone-l'){
+       height: 600px;
+       display: flex;
+       justify-content: center;
+      }
+
     &__article{
         color: white;
         width: 633px;
         margin-top: 200px;
         margin-left: 60px;
+
+
+        @include media('<=desktop'){
+            width: 400px;
+        }
+        @include media('<=tablet'){
+            width: 300px;
+            margin-top: 50px;
+        }
+        @include media('<=phone-l'){
+           width: 200px;
+           margin-left: 0;
+           margin-top: 300px;
+          }
+
         &--header{
             font-size: 4rem;
             font-weight: 300;
@@ -18,13 +39,32 @@
         &--text{
             font-size: 1.8rem;
             line-height: 45px;
+
+            @include media('<=desktop'){
+                line-height: 30px;
+            }
         }
     }
 
     .bg-circle{
         position: absolute;
-        top:-20px;
+        top:-40px;
         right: -60px;
+
+        @include media('<=desktop'){
+            width: 600px;
+            top: -100px;
+          }
+          @include media('<=tablet'){
+            width: 450px;
+            top: -250px;
+            right: -20px;
+          }
+          @include media('<=phone-l'){
+            width: 320px;
+           top: -350px;
+            right: 20px;
+          }
     }
     .illustration-container{
             width:556px;
@@ -32,6 +72,22 @@
             top: 200px;
             right:70px;
             z-index: 20;
+
+            @include media('<=desktop'){
+               width: 350px;
+               top: 200px;
+               right: 40px;
+             }
+             @include media('<=tablet'){
+                width: 300px;
+                top: 70px;
+                right: 30px;
+              }
+              @include media('<=phone-l'){
+                width: 200px;
+               top: 10px;
+               right: 65px;
+              }
     }
     
 }

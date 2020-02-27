@@ -1,13 +1,18 @@
 
+@import '../../node_modules/include-media/dist/include-media';
+@import '../styles/styles.scss';
+
 $backgroundBlue: #65CFFC;
 $backgroundPurple: #AE43FF;
 $darkBlue:#546CE3;
 $lightGreen:#35E39D;
 
+
 .entire-page{
         overflow: hidden;
         display: flex;
         flex-direction: column;
+        
     .with-gradient{
         overflow: hidden;
         display: flex;
@@ -15,6 +20,11 @@ $lightGreen:#35E39D;
         background: radial-gradient(at bottom left, $backgroundBlue, $backgroundPurple);
         border-radius: 0 0 750px 750px;
         width: 100%;
+
+        @include media('<=phone-l'){
+            border-radius: 0;
+            box-shadow: 5px 5px 15px 5px #AE43FF, 5px 5px 15px 5px rgba(101,207,252,0.8);
+        }
         
     }
 }

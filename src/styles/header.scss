@@ -1,19 +1,57 @@
 @import './index.scss';
+@import '../../node_modules/include-media/dist/include-media';
 
 .container{
     width: 100%;
     height: 1000px;
+
+    @include media('<=desktop'){
+        height: 600px;
+     }
+     @include media("<=phone-l"){
+       height: 750px;
+      }
     .upperCircels{
         position: absolute;
         height: 900px;
         top:-5rem;
         left:-16rem;
-        .cls-1{fill:#fff;}
+
+        @include media('<=desktop'){
+           left: -17rem;
+           top: -18rem;
+        }
+        @include media('<=tablet'){
+            left: -12rem;
+            top: -20rem;
+         }
+         @include media("<=phone-l"){
+            left: 10rem;
+            top: -32rem;
+           }
+
+        
     }
     .downerCircels{
         position: absolute;
         bottom: -250px;
-        left: 400px
+        left: 400px;
+
+        @include media('<=desktop'){
+            top: 280px;
+            left:260px;
+            width: 600px;
+         }
+         @include media('<=tablet'){
+           top: 250px;
+           left: 140px;
+           width: 500px;
+         }
+         @include media('<=phone-l'){
+            top: 380px;
+            left: -30px;
+            width: 300px;
+          }
     }
     .logo{
         max-width: 400px;
@@ -21,8 +59,22 @@
         top: 60px;
         left:60px;
         .cls-1{fill:#808285;}
-    }
 
+        @include media('<=desktop'){
+            top: 100px;
+            max-width: 250px;
+        }
+        @include media('<=tablet'){
+            top: 80px;
+            left: 25px;
+            max-width: 220px;
+         }
+         @include media('<=phone-l'){
+            top: 120px;
+            left: 150px;
+            max-width: 110px;
+         }
+    }
     .header{
         position: absolute;
         display: flex;
@@ -33,12 +85,31 @@
         display: flex;
         flex-direction: column;
 
+        @include media('<=desktop'){
+            top: 40%;
+         }
+
+        @include media('<=tablet'){
+            top: 30%;
+            width: 250px;
+            text-align: right;
+         }
+         @include media('<=phone-l'){
+            top: 47%;
+            right: 20%;
+            text-align: center;
+         }
+
         &__main-header{
             font-size: 3rem;
             letter-spacing: 7px;
             color:white;
             font-weight: 600;
             margin: 0;
+            @include media('<=phone-l'){
+                letter-spacing: 5px;
+             }
+            
         }
         &__sub-header{
             color: white;
@@ -46,10 +117,18 @@
             font-weight: 400;
             letter-spacing: 2px;
             margin: 18px 0;
+
+            @include media('<=tablet'){
+                line-height: 20px;
+             }
         }
         &__button{
             box-shadow: 10px 10px 30px -5px rgba(0,0,0,0.4);
             transition: all linear .2s;
+
+            @include media('<=phone-l'){
+                align-self: center;
+             }
             &:hover{
                 box-shadow: 10px 10px 30px -5px rgba(0,0,0,0.6);
                 transform: translate(-2px,-2px);   

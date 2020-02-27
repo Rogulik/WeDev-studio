@@ -3,7 +3,7 @@ import '../styles/services.scss'
 
 const Services = () => {
     return (
-             <section className='services'>
+          <section className='services'>
             <div className='services__outter-bg'>
               <div className='services__outter-bg--horizontal-cards'>
                 <div className='card card-blue'>

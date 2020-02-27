@@ -1,4 +1,4 @@
-
+@import '../../node_modules/include-media/dist/include-media';
 
 .menu{
     position: absolute;
@@ -10,17 +10,36 @@
     right:0;
     margin:0;
     z-index: 100;
+    @include media('<=desktop'){
+        width: 500px
+     }
+     @include media("<=tablet"){
+        width: 450px;
+    }
+    
     &__content{
         display: flex;
         justify-content: space-around;
         margin-top: 30px;
         margin-left: 100px;
 
+        @include media('<=phone-l'){
+            margin-top: 40px;
+            margin-left: 50px;
+         }
+
         &--link{
             color: white;
             text-decoration: none;
             font-weight: 600;
             font-size: 1.3rem;
+            
+            @include media('<=desktop'){
+                font-size: 1.7rem;
+             }
+             @include media('<=phone-l'){
+                font-size: 2rem;
+             }
 
             &:hover{
                 text-decoration: underline;
