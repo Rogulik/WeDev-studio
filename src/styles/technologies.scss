@@ -1,6 +1,13 @@
 @import '../../node_modules/include-media/dist/include-media';
 
 
+$breakpoints: (
+  'phone': 320px,
+  'phone-l':425px,
+  'tablet': 768px,
+  'desktop': 1024px
+);
+
 .technologies{
     display: flex;
     position: relative;
@@ -40,7 +47,6 @@
             font-size: 3rem;
             letter-spacing: 2px;
             font-weight: 300;
-             mix-blend-mode: difference;
         }
     }
 }

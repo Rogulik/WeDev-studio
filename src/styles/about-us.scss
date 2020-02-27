@@ -1,5 +1,12 @@
 @import '../../node_modules/include-media/dist/include-media';
 
+$breakpoints: (
+  'phone': 320px,
+  'phone-l':425px,
+  'tablet': 768px,
+  'desktop': 1024px
+);
+
 .about-us{
     position: relative;
     width: 100%;

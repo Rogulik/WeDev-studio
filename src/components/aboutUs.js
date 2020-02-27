@@ -21,8 +21,8 @@ const AboutUs = () => {
             <article className='about-us__article'>
               <h2 className='about-us__article--header'>About us</h2>
               <p className='about-us__article--text'>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-                 sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                Our mission is to help grow your personal business online by building and maintaining your website.
+                
               </p>
             </article>
             <div className='illustration-container'>
